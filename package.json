@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "build-icons": "svgo --config=svgo-icons.config.js -f ./src/icons -o ./dist/icons --pretty --indent=2"
+  },
+  "dependencies": {
+    "rimraf": "^3.0.2",
+    "svgo": "^2.8.0",
+    "webfont": "^11.2.26"
+  }
+}
