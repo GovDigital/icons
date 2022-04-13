@@ -3,9 +3,9 @@ module.exports = {
         'removeDimensions',
         'sortAttrs',
         {
-            name: "removeAttrs",
+            name: 'removeAttrs',
             params: {
-                attrs: "(id)"
+                attrs: '(id)'
             }
         },
         {
