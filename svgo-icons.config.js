@@ -8,14 +8,14 @@ module.exports = {
                 attrs: '(id)'
             }
         },
-        {
-            name: 'addAttributesToSVGElement',
-            params: {
-                attributes: [
-                    { fill: 'currentColor' },
-                    { 'aria-hidden': true }
-                ]
-            }
-        }
+        // {
+        //     name: 'addAttributesToSVGElement',
+        //     params: {
+        //         attributes: [
+        //             { fill: 'currentColor' },
+        //             { 'aria-hidden': true }
+        //         ]
+        //     }
+        // }
     ]
 }
