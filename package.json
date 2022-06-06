@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "build": "build-icons && build-webfont",
+    "build": "npm run build-icons && npm run build-webfont",
     "build-icons": "svgo --config=svgo-icons.config.js -f ./src/icons -o ./dist/icons --pretty --indent=2",
     "build-webfont": "svgtofont --sources ./dist/icons --output ./dist/fonts"
   },
