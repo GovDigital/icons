@@ -1,6 +1,6 @@
 {
   "fontName": "PRPIcons",
-  "useNameAsUnicode": true,
+  "useNameAsUnicode": false,
   "css": false,
   "outSVGReact": false,
   "outSVGPath": false

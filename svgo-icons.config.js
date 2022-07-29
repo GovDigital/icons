@@ -5,17 +5,17 @@ module.exports = {
         {
             name: 'removeAttrs',
             params: {
-                attrs: '(id)'
+                attrs: '(id|style)'
             }
         },
-        // {
-        //     name: 'addAttributesToSVGElement',
-        //     params: {
-        //         attributes: [
-        //             { fill: 'currentColor' },
-        //             { 'aria-hidden': true }
-        //         ]
-        //     }
-        // }
+        {
+            name: 'addAttributesToSVGElement',
+            params: {
+                attributes: [
+                    { fill: '#000000' },
+                    // { 'aria-hidden': true }
+                ]
+            }
+        }
     ]
 }
