@@ -2,6 +2,10 @@ module.exports = {
     plugins: [
         'removeDimensions',
         'sortAttrs',
+        'removeStyleElement',
+        'removeUselessDefs',
+        'convertShapeToPath',
+        'removeXMLProcInst',
         {
             name: 'removeAttrs',
             params: {
