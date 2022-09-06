@@ -6,10 +6,16 @@ module.exports = {
         'removeUselessDefs',
         'convertShapeToPath',
         'removeXMLProcInst',
+        'removeComments',
+        'removeEditorsNSData',
+        'convertShapeToPath',
+        'removeXMLNS',
+        'removeUnknownsAndDefaults',
+        'collapseGroups',
         {
             name: 'removeAttrs',
             params: {
-                attrs: '(id|style)'
+                attrs: '(id|style|class|x|y|version)'
             }
         },
         {
@@ -17,6 +23,7 @@ module.exports = {
             params: {
                 attributes: [
                     { fill: '#000000' },
+                    { xmlns: 'http://www.w3.org/2000/svg' }
                     // { 'aria-hidden': true }
                 ]
             }
