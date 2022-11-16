@@ -1,6 +1,6 @@
 {
-  "fontName": "PRPIcons",
-  "useNameAsUnicode": false,
+  "fontName": "GovIcons",
+  "useNameAsUnicode": true,
   "css": false,
   "outSVGReact": false,
   "outSVGPath": false
