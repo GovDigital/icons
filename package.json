@@ -1,11 +1,15 @@
 {
   "scripts": {
-    "build": "npm run build-icons && npm run build-webfont",
-    "build-icons": "svgo --config=svgo-icons.config.js -f ./src/icons -o ./dist/icons --pretty --indent=2",
+    "build": "npm run build-svg && npm run build-webfont && npm run build-png && npm run version",
+    "version": "md5sum dist/fonts/GovIcons.ttf | cut -f 1 -d \" \" > version",
+    "build-svg": "svgo --config=svgo-icons.config.js -f ./src/icons -o ./dist/icons --pretty --indent=2",
+    "build-png": "node ./svg2png.js",
     "build-webfont": "svgtofont --sources ./dist/icons --output ./dist/fonts"
   },
   "dependencies": {
+    "glob": "^8.0.3",
     "rimraf": "^3.0.2",
+    "sharp": "^0.31.2",
     "svgo": "^2.8.0",
     "svgtofont": "^3.17.6"
   }
