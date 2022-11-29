@@ -1,7 +1,7 @@
 {
   "scripts": {
     "build": "npm run build-svg && npm run build-webfont && npm run build-png && npm run version",
-    "version": "md5sum dist/fonts/GovIcons.ttf | cut -f 1 -d \" \" > version",
+    "version": "md5sum dist/fonts/GovIcons.ttf | cut -f 1 -d \" \" > dist/fonts/version",
     "build-svg": "svgo --config=svgo-icons.config.js -f ./src/icons -o ./dist/icons --pretty --indent=2",
     "build-png": "node ./svg2png.js",
     "build-webfont": "svgtofont --sources ./dist/icons --output ./dist/fonts"
